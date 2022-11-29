@@ -1,0 +1,258 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 60px;
+}
+
+/* .left-content {
+    height: 100vh;
+    background-color: red;
+}
+
+.right-content {
+    height: 100vh;
+    background-color: blue;
+} */
+
+/* card do perfil */
+
+.profile-card {
+    width: 348px;
+    height: 292px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-top: 32px;
+    border: 2px solid #47948b;
+}
+
+.nameSpan {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.edit {
+    width: 24px;
+    height: 24px;
+    filter: invert(59%) sepia(19%) saturate(488%) hue-rotate(209deg) brightness(83%) contrast(84%);
+    margin-left: 5px;
+}
+
+.edit:hover {
+    cursor: pointer;
+
+}
+
+.bio-span {
+    padding: 10px;
+}
+
+.bio {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Card de informaçoes */
+
+.info-card {
+    width: 348px;
+    height: 348px;
+    background-color: var(--bg-cards);
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.info-card ul {
+    position: relative;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card ul li {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.info-card ul li img {
+    width: 20px;
+    height: 20px;
+    filter: invert(61%) sepia(2%) saturate(3902%) hue-rotate(209deg) brightness(82%) contrast(79%);
+}
+
+.info-card ul li p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* Card de tecnologias */
+.techs {
+    margin-top: 30px;
+    width: 348px;
+    height: 208px;
+    background-color: var(--bg-cards);
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.techsText {
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+
+}
+
+/* Card de experiencias */
+.experiences {
+    width: 348px;
+    height: 348px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.xpText {
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+/* Card de educação */
+.preparation {
+    width: 348px;
+    height: 352px;
+    background-color: var(--bg-cards);
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.prepText {
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+
+
+/* ================================ */
+/* Right content do grid display */
+/* =============================== */
+
+/* Meus projetos */
+.right-content {
+    width: calc(100% - 60px);
+}
+.projects {
+    background-color: var(--bg-cards);
+    width: 100%;
+    height: 86px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myProjectsText {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.seeAll {
+    margin-right: 30px;
+}
+
+/* Cards de projetos */
+.cards {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+}
+.card1 {
+    height: 100%;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card2 {
+    height: 100%;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Posts Cards Area */
+.posts {
+    width: 100%;
+    height: auto;
+}
+.recentPosts {
+    width: 100%;
+    height: 150px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
